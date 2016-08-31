@@ -1,0 +1,3 @@
+version=3
+
+https://github.com/zaproxy/zaproxy/releases .*/ZAP_(\d.*)_Linux\.tar\.gz
