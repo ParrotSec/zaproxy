@@ -1,14 +1,17 @@
 Source: zaproxy
 Section: utils
 Priority: extra
-Maintainer: Lorenzo "Palinuro" Faletra <palinuro@frozenbox.org>
+Maintainer: Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
 Build-Depends: debhelper (>= 9)
 Standards-Version: 3.9.8
 Homepage: https://github.com/zaproxy/zaproxy
+Vcs-Git: git://dev.parrotsec.org/parrot/zaproxy
+Vcs-Browser: https://dev.parrotsec.org/parrot/zaproxy
 
 Package: zaproxy
 Architecture: all
 Depends: ${misc:Depends}, default-jre
+Breaks: kali-menu (<< 1.371.1)
 Description: Testing tool for finding vulnerabilities in web applications
  The OWASP Zed Attack Proxy (ZAP) is an easy to use 
  integrated penetration testing tool for finding 

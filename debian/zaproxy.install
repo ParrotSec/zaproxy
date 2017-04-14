@@ -1,12 +1,9 @@
 db usr/share/zaproxy/
-filter usr/share/zaproxy/
 lang usr/share/zaproxy/
 lib usr/share/zaproxy/
 license usr/share/zaproxy/
-log usr/share/zaproxy/
 plugin usr/share/zaproxy/
 scripts usr/share/zaproxy/
-session usr/share/zaproxy/
 xml usr/share/zaproxy/
 *.jar usr/share/zaproxy/
 zap.ico usr/share/zaproxy/

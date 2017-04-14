@@ -1,5 +1,5 @@
-zaproxy (2.5.0-1parrot0) testing; urgency=medium
+zaproxy (2.6.0-0parrot1) testing; urgency=medium
 
-  * Import package from kali sources
+  * Import package.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Wed, 31 Aug 2016 02:21:58 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 15 Apr 2017 01:01:06 +0200
