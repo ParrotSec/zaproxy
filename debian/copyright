@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: zaproxy
 Source: https://github.com/zaproxy/zaproxy
 
@@ -9,7 +9,7 @@ License: Apache-2.0
  you may not use this file except in compliance with the License.
  You may obtain a copy of the License at
  .
-   http://www.apache.org/licenses/LICENSE-2.0
+   https://www.apache.org/licenses/LICENSE-2.0
  .
  Unless required by applicable law or agreed to in writing, software
  distributed under the License is distributed on an "AS IS" BASIS,
@@ -18,8 +18,8 @@ License: Apache-2.0
  limitations under the License.
 
 Files: debian/*
-Copyright: 2013 Devon Kearns <dookie@kali.org>,
-           2017 Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>
+Copyright: 2013 Devon Kearns <dookie@kali.org>
+           2019 Sophie Brun <sophie@offensive-security.com>
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -32,7 +32,7 @@ License: GPL-2+
  GNU General Public License for more details.
  .
  You should have received a copy of the GNU General Public License
- along with this program. If not, see <http://www.gnu.org/licenses/>
+ along with this program. If not, see <https://www.gnu.org/licenses/>
  .
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".

@@ -1,5 +1,165 @@
-zaproxy (2.6.0-0parrot1) testing; urgency=medium
+zaproxy (2.9.0-0parrot1) rolling-testing; urgency=medium
 
-  * Import package.
+  * Rebuild package on Parrot build nodes.
 
- -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Sat, 15 Apr 2017 01:01:06 +0200
+ -- Lorenzo "Palinuro" Faletra <palinuro@parrotsec.org>  Fri, 07 Aug 2020 16:50:14 +0200
+
+zaproxy (2.9.0-0kali1) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Configure git-buildpackage for Kali
+  * Update URL in GitLab's CI configuration file
+
+  [ Sophie Brun ]
+  * New upstream version 2.9.0
+
+ -- Sophie Brun <sophie@offensive-security.com>  Mon, 20 Jan 2020 12:25:36 +0100
+
+zaproxy (2.8.1-0kali1) kali-dev; urgency=medium
+
+  * Add GitLab's CI configuration file
+  * New upstream version 2.8.1
+
+ -- Raphaël Hertzog <raphael@offensive-security.com>  Wed, 28 Aug 2019 16:18:21 +0200
+
+zaproxy (2.8.0-0kali1) kali-dev; urgency=medium
+
+  [ Raphaël Hertzog ]
+  * Update Maintainer field
+  * Update Vcs-* fields for the move to gitlab.com
+
+  [ Sophie Brun ]
+  * Add debian/gbp.conf
+  * New upstream version 2.8.0
+  * Use debhelper-compat 12
+  * Update debian/copyright
+  * Bump Standards-Version to 4.3.0
+  * Add debian/zaproxy.lintian-overrides
+  * Fix lintian errors about old timestamps
+
+ -- Sophie Brun <sophie@offensive-security.com>  Fri, 14 Jun 2019 14:14:40 +0200
+
+zaproxy (2.7.0-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 28 Nov 2017 17:01:58 +0100
+
+zaproxy (2.6.0-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 11 Apr 2017 15:00:14 +0200
+
+zaproxy (2.5.0-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+
+ -- Sophie Brun <sophie@freexian.com>  Mon, 06 Jun 2016 14:13:03 +0200
+
+zaproxy (2.4.3-0kali3) kali-dev; urgency=medium
+
+  * Drop dependency on openjdk-7-jdk.
+  * Drop override_dh_strip_nondeterminism since the underlying bug has been
+    fixed.
+
+ -- Raphaël Hertzog <hertzog@debian.org>  Sat, 23 Apr 2016 15:33:00 +0200
+
+zaproxy (2.4.3-0kali2) kali-dev; urgency=medium
+
+  * debian/rules: override_dh_strip_nondeterminism to fix the broken jar
+    (Closes: 0003019)
+
+ -- Sophie Brun <sophie@freexian.com>  Tue, 26 Jan 2016 09:42:38 +0100
+
+zaproxy (2.4.3-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release
+
+ -- Sophie Brun <sophie@freexian.com>  Mon, 07 Dec 2015 10:22:51 +0100
+
+zaproxy (2.4.2-0kali1) kali-dev; urgency=medium
+
+  * Import new upstream release 
+
+ -- Sophie Brun <sophie@freexian.com>  Thu, 10 Sep 2015 15:37:42 +0200
+
+zaproxy (2.4.1-1kali1) kali-dev; urgency=low
+
+  * Upstream update
+
+ -- Mati Aharoni <muts@kali.org>  Mon, 03 Aug 2015 00:21:25 -0400
+
+zaproxy (2.4.0-0kali2) kali-dev; urgency=medium
+
+  * Fix the debian/watch
+
+ -- Sophie Brun <sophie@freexian.com>  Wed, 15 Jul 2015 15:19:31 +0200
+
+zaproxy (2.4.0-0kali1) kali; urgency=low
+
+  * Fixed typo in helper script (Closes: 0002321)
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 08 Jun 2015 19:37:37 -0600
+
+zaproxy (2.4.0-0kali0) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0002227)
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 14 Apr 2015 09:41:44 -0600
+
+zaproxy (2.3.1-0kali2) kali; urgency=medium
+
+  * Rename /usr/bin/zap in /usr/bin/zaproxy as it's in conflict with an other
+    package (Closes: 0002153)
+  * Fix VCS git in debian/control
+
+ -- Sophie Brun <sophie@freexian.com>  Mon, 09 Mar 2015 14:43:29 +0100
+
+zaproxy (2.3.1-0kali1) kali; urgency=medium
+
+  * Imported new upstream release
+
+ -- Devon Kearns <dookie@kali.org>  Tue, 09 Sep 2014 04:08:20 -0600
+
+zaproxy (2.3.0.1-0kali1) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0001146)
+
+ -- Devon Kearns <dookie@kali.org>  Fri, 11 Apr 2014 09:37:25 -0600
+
+zaproxy (2.3.0-0kali1) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0001142)
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 10 Apr 2014 10:26:08 -0600
+
+zaproxy (2.2.2-1kali0) kali; urgency=low
+
+  * Imported new upstream release (Closes: 0000617)
+
+ -- Devon Kearns <dookie@kali.org>  Fri, 27 Sep 2013 09:03:51 -0600
+
+zaproxy (2.2.1-1kali0) kali; urgency=low
+
+  * Imported new upstream release and updated helper scripts
+
+ -- Devon Kearns <dookie@kali.org>  Thu, 26 Sep 2013 15:36:48 -0600
+
+zaproxy (2.1.0-1kali0) kali; urgency=low
+
+  * Imported new upstream release (Closes: #0000325)
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 29 Apr 2013 11:20:40 -0600
+
+zaproxy (2.0.0-1kali0) kali; urgency=low
+
+  * Imported new upstream version. openjdk-7-jdk added as install depend
+
+ -- Devon Kearns <dookie@kali.org>  Sun, 03 Mar 2013 16:05:24 -0700
+
+zaproxy (1.4.1-1kali0) kali; urgency=low
+
+  * Initial release 
+
+ -- Devon Kearns <dookie@kali.org>  Mon, 07 Jan 2013 15:10:54 -0700

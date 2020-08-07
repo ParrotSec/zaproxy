@@ -2,3 +2,13 @@
 
 %:
 	dh $@ 
+
+override_dh_install:
+	dh_install
+	# fix lintian errors about too old timestamps (1970-01-02) on all files
+	find debian/zaproxy/usr/share/zaproxy -exec touch {} +
+
+override_dh_installdocs:
+	dh_installdocs
+	# fix lintian errors about too old timestamps (1970-01-02) on all files
+	touch debian/zaproxy/usr/share/doc/zaproxy/README
