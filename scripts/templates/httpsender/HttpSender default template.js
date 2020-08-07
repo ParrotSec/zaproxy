@@ -16,25 +16,21 @@
 // 		9	ACCESS_CONTROL_SCANNER_INITIATOR
 // 		10	AJAX_SPIDER_INITIATOR
 // For the latest list of values see the HttpSender class:
-// https://github.com/zaproxy/zaproxy/blob/master/src/org/parosproxy/paros/network/HttpSender.java
+// https://github.com/zaproxy/zaproxy/blob/master/zap/src/main/java/org/parosproxy/paros/network/HttpSender.java
 // 'helper' just has one method at the moment: helper.getHttpSender() which returns the HttpSender 
 // instance used to send the request.
 //
 // New requests can be made like this:
 // msg2 = msg.cloneAll() // msg2 can then be safely changed as required without affecting msg
 // helper.getHttpSender().sendAndReceive(msg2, false);
-// println('msg2 response=' + msg2.getResponseHeader().getStatusCode())
-
-// The following handles differences in printing between Java 7's Rhino JS engine
-// and Java 8's Nashorn JS engine
-if (typeof println == 'undefined') this.println = print;
+// print('msg2 response=' + msg2.getResponseHeader().getStatusCode())
 
 function sendingRequest(msg, initiator, helper) {
 	// Debugging can be done using println like this
-	println('sendingRequest called for url=' + msg.getRequestHeader().getURI().toString())
+	print('sendingRequest called for url=' + msg.getRequestHeader().getURI().toString())
 }
 
 function responseReceived(msg, initiator, helper) {
 	// Debugging can be done using println like this
-	println('responseReceived called for url=' + msg.getRequestHeader().getURI().toString())
+	print('responseReceived called for url=' + msg.getRequestHeader().getURI().toString())
 }

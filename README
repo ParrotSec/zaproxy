@@ -9,7 +9,7 @@ Its also a great tool for experienced pentesters to use for manual security
 testing.
 
 For more details on ZAP please goto the home page:
-	https://www.owasp.org/index.php/ZAP
+	https://www.zaproxy.org/
 	
 We welcome feedback, either via the Issues, User Group or Developer Group.
 ZAP is also a community based project, and contributions are welcomed.
@@ -26,7 +26,7 @@ There are 3 options on Windows:
 
 Linux
 
-On Linux theres just a 'zap.sh' script in the installation directory, although
+On Linux there's just a 'zap.sh' script in the installation directory, although
 you can create a desktop icon manually as well.
 
 Mac OS
@@ -50,9 +50,6 @@ line argument '-cmd', or in daemon mode, using '-daemon'.
 For more information about the command line arguments use '-help'.
 ZAP will show an information message and exit, if still started with GUI.
 
-Note, some of the ZAP features that require a display, for example, running AJAX
-Spider with Firefox, might still be run with the help of applications like Xvfb.
-
 Java API
 --------
 
@@ -64,5 +61,4 @@ https://github.com/zaproxy/zap-api-java/releases
 It is also available on Maven Central:
  - GroupId: 'org.zaproxy'
  - ArtifactId: 'zap-clientapi'
- - Version: '1.0.0'
 

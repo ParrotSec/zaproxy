@@ -1,10 +1,6 @@
 // Note that new active scripts will initially be disabled
 // Right click the script in the Scripts tree and select "enable"  
 
-// The following handles differences in printing between Java 7's Rhino JS engine
-// and Java 8's Nashorn JS engine
-if (typeof println == 'undefined') this.println = print;
-
 /**
  * Scans a "node", i.e. an individual entry in the Sites Tree.
  * The scanNode function will typically be called once for every page. 
@@ -16,7 +12,7 @@ if (typeof println == 'undefined') this.println = print;
  */
 function scanNode(as, msg) {
 	// Debugging can be done using println like this
-	println('scan called for url=' + msg.getRequestHeader().getURI().toString());
+	print('scan called for url=' + msg.getRequestHeader().getURI().toString());
 
 	// Copy requests before reusing them
 	msg = msg.cloneRequest();
@@ -58,7 +54,7 @@ function scanNode(as, msg) {
  */
 function scan(as, msg, param, value) {
 	// Debugging can be done using println like this
-	println('scan called for url=' + msg.getRequestHeader().getURI().toString() + 
+	print('scan called for url=' + msg.getRequestHeader().getURI().toString() + 
 		' param=' + param + ' value=' + value);
 	
 	// Copy requests before reusing them
@@ -72,14 +68,23 @@ function scan(as, msg, param, value) {
 	
 	// Test the response here, and make other requests as required
 	if (true) {	// Change to a test which detects the vulnerability
-		// raiseAlert(risk, int confidence, String name, String description, String uri, 
-		//		String param, String attack, String otherInfo, String solution, String evidence, 
-		//		int cweId, int wascId, HttpMessage msg)
 		// risk: 0: info, 1: low, 2: medium, 3: high
 		// confidence: 0: falsePositive, 1: low, 2: medium, 3: high, 4: confirmed
-		as.raiseAlert(1, 1, 'Active Vulnerability title', 'Full description', 
-		msg.getRequestHeader().getURI().toString(), 
-			param, 'Your attack', 'Any other info', 'The solution ', '', 0, 0, msg);
+		as.newAlert()
+			.setRisk(1)
+			.setConfidence(1)
+			.setName('Active Vulnerability title')
+			.setDescription('Full description')
+			.setParam(param)
+			.setAttack('Your attack')
+			.setEvidence('Evidence')
+			.setOtherInfo('Any other info')
+			.setSolution('The solution')
+			.setReference('References')
+			.setCweId(0)
+			.setWascId(0)
+			.setMessage(msg)
+			.raise();
 	}
 }
 
